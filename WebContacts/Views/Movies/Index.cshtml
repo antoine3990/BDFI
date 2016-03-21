@@ -166,7 +166,7 @@
                     @{
                         foreach (var item in Model)
                         {
-                            <tr>
+                            <tr href="/Movies/Details/@item.Id">
                                 <td class="col-xs-4">
                                     <img src="@Url.Content(item.GetAvatarURL())" class="SmallAvatar" />
                                     @Html.DisplayFor(modelItem => item.FirstName)
