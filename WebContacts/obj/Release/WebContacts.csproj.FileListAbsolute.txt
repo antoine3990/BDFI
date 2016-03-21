@@ -1,0 +1,94 @@
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\csc.exe
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\vbc.exe
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\WebContacts.dll.config
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\WebContacts.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\WebContacts.pdb
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\Antlr3.Runtime.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\Newtonsoft.Json.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Helpers.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Mvc.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Optimization.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Razor.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.WebPages.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\WebGrease.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Helpers.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Mvc.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Optimization.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.Razor.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.WebPages.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\Antlr3.Runtime.pdb
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\Newtonsoft.Json.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\fr\System.Web.Razor.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\obj\Release\WebContacts.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\obj\Release\WebContacts.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 5 Complété\WebContacts\obj\Release\WebContacts.pdb
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\csc.exe
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\vbc.exe
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\WebContacts.dll.config
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\WebContacts.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\WebContacts.pdb
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\Antlr3.Runtime.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\Newtonsoft.Json.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Helpers.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Mvc.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Optimization.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Razor.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.WebPages.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\WebGrease.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Helpers.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Mvc.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Optimization.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.Razor.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.WebPages.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\Antlr3.Runtime.pdb
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\Newtonsoft.Json.xml
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\fr\System.Web.Razor.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\obj\Release\WebContacts.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\obj\Release\WebContacts.dll
+C:\Users\Nicolas Chourot\Desktop\LABO 6\WebContacts\obj\Release\WebContacts.pdb

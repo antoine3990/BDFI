@@ -1,0 +1,61 @@
+﻿@model WebContacts.Models.Movie
+
+@{
+    ViewBag.Title = "Détails";
+}
+
+<h2>Détails</h2>
+
+<div>
+    <h4>Contact</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-2">
+            <img src="@Url.Content(Model.GetAvatarURL())" class="BigAvatar" />
+        </div>
+        <div class="col-md-7">
+            <dl class="dl-horizontal" style="font-size:x-large; margin-top:0px;">
+                <dt> @Html.DisplayNameFor(model => model.FirstName) </dt>
+                <dd> @Html.DisplayFor(model => model.FirstName) </dd>
+
+                <dt> @Html.DisplayNameFor(model => model.LastName) </dt>
+                <dd> @Html.DisplayFor(model => model.LastName) </dd>
+
+                <dt> @Html.DisplayNameFor(model => model.Email) </dt>
+                <dd> @Html.DisplayFor(model => model.Email) </dd>
+
+                <dt> @Html.DisplayNameFor(model => model.Phone) </dt>
+                <dd> @Html.DisplayFor(model => model.Phone) </dd>
+
+                <dt> @Html.DisplayNameFor(model => model.BirthDay) </dt>
+                <dd> @Html.DisplayFor(model => model.BirthDay) </dd>
+
+                <dt> @Html.DisplayNameFor(model => model.Sex) </dt>
+                <dd> @Html.DisplayFor(model => model.Sex) </dd>
+            </dl>
+        </div>
+        <div class="col-md-3" style="font-size:large;">
+            <h3 style="margin-top:0px;">Liste d'amis</h3>
+            <select multiple="multiple" id="FriendsList" size="7">
+                @foreach (WebContacts.Models.Movie movie in ViewBag.FriendsList)
+                {
+                    <option value="@movie.Id">
+                        @movie.FirstName @movie.LastName
+                    </option>
+                }
+            </select>
+        </div>
+
+    </div>
+    <p>
+        @Html.ActionLink("Modifier", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Retour", "Index")
+    </p>
+</div>
+
+@section Scripts {
+    <script>
+        $("document").ready(SortSelect("FriendsList"));
+    </script>
+}

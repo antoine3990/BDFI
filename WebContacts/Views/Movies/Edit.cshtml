@@ -1,0 +1,155 @@
+﻿@model WebContacts.Models.Movie
+
+@{
+    ViewBag.Title = "Modifier";
+}
+
+<h2>Modifier</h2>
+
+
+@using (Html.BeginForm("Edit", "Movies", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="main col-md-5">
+            <div class="form-horizontal">
+                <h4>Contact</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Id)
+                @Html.HiddenFor(model => model.AvatarId)
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BirthDay, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-6">
+                        @Html.EditorFor(model => model.BirthDay, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                        @Html.ValidationMessageFor(model => model.BirthDay, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Sex, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-6">
+                        @foreach (WebContacts.Models.SexType sex in Enum.GetValues(typeof(WebContacts.Models.SexType)))
+                        {
+                            String id = "Sex_" + (int)sex;
+                            if (Model.Sex == sex)
+                            {
+                                @Html.RadioButtonFor(model => model.Sex, (int)sex, new { id, @checked = "true" });
+                            }
+                            else
+                            {
+                                @Html.RadioButtonFor(model => model.Sex, (int)sex, new { id });
+                            }
+                            @Html.Label(id, sex.ToString(), new { @style = "margin:8px;" });
+                        }
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AvatarId, new { @class = "control-label col-md-3" })
+                    <div class="col-md-6">
+                        <img id="UploadedImage" class="UploadedImage" src="@Url.Content(Model.GetAvatarURL())" />
+                        <input id="ImageUploader" name="ImageUploader" type="file" /> <br />
+                        <input id="UploadButton" class="btn btn-primary" type="button" value="Choisir un avatar..." />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-6">
+                        <input type="submit" value="Save" class="btn btn-default" id="save" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main col-md-6">
+            <h4>Liste des amis</h4>
+            <hr />
+            <div class="row">
+                <div class="col-xs-5">
+                    <!--
+                        This hidden input is used to pass the selected friend Ids 
+                        on the submit event of this form (refer to javascript code in utilies.js)
+                    -->
+                    <input name="FriendsListItems" id="FriendsListItems" type="hidden" value="" />
+                    <select multiple="multiple" id="FriendsList" size="12">
+                        @foreach (WebContacts.Models.Movie movie in ViewBag.FriendsList)
+                        {
+                            <option value="@movie.Id">
+                                @movie.FirstName @movie.LastName
+                            </option>
+                        }
+                    </select>
+                </div>
+                <div class="col-xs-2" style="text-align:center">
+                    <img src="~/Images/UI/Moveleft.png" class="CMD_Icon pointer" id="MoveLeft" />
+                    <img src="~/Images/UI/MoveRight.png" class="CMD_Icon pointer" id="MoveRight" />
+                </div>
+                <div class="col-xs-5">
+                    <select multiple="multiple" id="ContactsList" size="12">
+                        @foreach (WebContacts.Models.Movie movie in ViewBag.NotYetFriendsList)
+                        {
+                            <option value="@movie.Id">
+                                @movie.FirstName @movie.LastName
+                            </option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Retour", "Index")
+</div>
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+
+        // Sort all the select listbox
+        function SortAllSelect() {
+            SortSelect("FriendsList");
+            SortSelect("ContactsList");
+        }
+
+        $("document").ready(SortAllSelect()); 
+    </script>
+}

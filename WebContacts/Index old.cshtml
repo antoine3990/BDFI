@@ -1,0 +1,161 @@
+﻿@model IEnumerable<WebContacts.Models.Contact>
+
+@{
+    ViewBag.Title = "Contacts";
+}
+<style>
+    .table-fixed thead {
+        width: 100%;
+    }
+
+    .table-fixed tbody {
+        height: 600px;
+        overflow-y: auto;
+        width: 100%;
+    }
+
+    .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+        display: block;
+    }
+
+    .table-fixed tbody td, .table-fixed thead > tr > th {
+        float: left;
+        border-bottom-width: 0;
+    }
+
+    th {
+        background-color:black;
+        color:white;
+    }
+</style>
+<h2>Contacts</h2>
+
+<p>
+    <a href="@Url.Action("Create")" style="text-decoration:none">
+        <img src="~/Images/UI/Add.png" class="CMD_Icon Pointer" data-toggle="tooltip" data-placement="right" title="Nouveau contact" />
+    </a>
+</p>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+
+            <table class="table table-fixed">
+                <thead>
+                    <tr>
+                        <th class="col-xs-1">
+                            @Html.DisplayNameFor(model => model.AvatarId)
+                        </th>
+                        <th class="col-xs-1">
+                            <a href="@Url.Action("Sort","Contacts", new { sortField = "FirstName" })" style="text-decoration:none">
+                                <img src="~/Images/UI/Sort.png" class="Small_CMD_Icon Pointer" />
+                            </a>
+                            @Html.DisplayNameFor(model => model.FirstName)
+                        </th>
+                        <th class="col-xs-1">
+                            <a href="@Url.Action("Sort","Contacts", new { sortField = "LastName" })" style="text-decoration:none">
+                                <img src="~/Images/UI/Sort.png" class="Small_CMD_Icon Pointer" />
+                            </a>
+                            @Html.DisplayNameFor(model => model.LastName)
+                        </th>
+                        <th class="col-xs-2">
+                            <a href="@Url.Action("Sort","Contacts", new { sortField = "Email" })" style="text-decoration:none">
+                                <img src="~/Images/UI/Sort.png" class="Small_CMD_Icon Pointer" />
+                            </a>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th class="col-xs-2">
+                            <a href="@Url.Action("Sort","Contacts", new { sortField = "Phone" })" style="text-decoration:none">
+                                <img src="~/Images/UI/Sort.png" class="Small_CMD_Icon Pointer" />
+                            </a>
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </th>
+                        <th class="col-xs-2">
+                            <a href="@Url.Action("Sort","Contacts", new { sortField = "BirthDay" })" style="text-decoration:none">
+                                <img src="~/Images/UI/Sort.png" class="Small_CMD_Icon Pointer" />
+                            </a>
+                            @Html.DisplayNameFor(model => model.BirthDay)
+                        </th>
+                        <th class="col-xs-1">
+                            <a href="@Url.Action("Sort","Contacts", new { sortField = "Sex" })" style="text-decoration:none">
+                                <img src="~/Images/UI/Sort.png" class="Small_CMD_Icon Pointer" />
+                            </a>
+                            @Html.DisplayNameFor(model => model.Sex)
+                        </th>
+                        <th class="col-xs-2">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="col-xs-1">
+                                <img src="@Url.Content(item.GetAvatarURL())" class="SmallAvatar" />
+                            </td>
+                            <td class="col-xs-1">
+                                @Html.DisplayFor(modelItem => item.FirstName)
+                            </td>
+                            <td class="col-xs-1">
+                                @Html.DisplayFor(modelItem => item.LastName)
+                            </td>
+                            <td class="col-xs-2">
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td  class="col-xs-2">
+                                @Html.DisplayFor(modelItem => item.Phone)
+                            </td>
+                            <td  class="col-xs-2">
+                                @Html.DisplayFor(modelItem => item.BirthDay)
+                            </td>
+                            <td  class="col-xs-1">
+                                <!--@Html.DisplayFor(modelItem => item.Sex)-->
+                                @if (item.Sex == WebContacts.Models.SexType.féminin)
+                                {
+                                    <img src="~/Images/UI/Female.png"
+                                         class="CMD_Icon"
+                                         data-toggle="tooltip"
+                                         data-placement="right"
+                                         title="@Html.DisplayFor(modelItem => item.Sex)" />
+                                }
+                                else
+                                {
+                                    <img src="~/Images/UI/Male.png"
+                                         class="CMD_Icon"
+                                         data-toggle="tooltip"
+                                         data-placement="right"
+                                         title="@Html.DisplayFor(modelItem => item.Sex)" />
+                                }
+                            </td>
+                            <td  class="col-xs-2">
+                                <a href="@Url.Action("Edit","Contacts", new { id= item.Id })" style="text-decoration:none">
+                                    <img src="~/Images/UI/Edit.png"
+                                         class="CMD_Icon Pointer"
+                                         data-toggle="tooltip"
+                                         data-placement="right"
+                                         title="Modifier @item.FirstName @item.LastName" />
+                                </a>
+                                <a href="@Url.Action("Details","Contacts", new { id= item.Id })" style="text-decoration:none">
+                                    <img src="~/Images/UI/Details.png"
+                                         class="CMD_Icon Pointer"
+                                         data-toggle="tooltip"
+                                         data-placement="right"
+                                         title="Voir les détails de @item.FirstName @item.LastName" />
+                                </a>
+                                <a href="@Url.Action("Delete","Contacts", new { id = item.Id })" style="text-decoration:none"
+                                   class="confirm"
+                                   message="Voulez-vous vraiment effacer @item.FirstName @item.LastName + '?'">
+                                    <img src="~/Images/UI/Delete.png"
+                                         class="CMD_Icon Pointer"
+                                         data-toggle="tooltip"
+                                         data-placement="right"
+                                         title="Effacer @item.FirstName @item.LastName" />
+                                </a>
+
+
+                           </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
